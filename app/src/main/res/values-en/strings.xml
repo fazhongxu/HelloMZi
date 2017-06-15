@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloMZi</string>
+
+    <string name="navigation_female">Female</string>
+    <string name="navigation_newsPaper">NewsPaper</string>
+    <string name="navigation_person">Person</string>
+
+</resources>
