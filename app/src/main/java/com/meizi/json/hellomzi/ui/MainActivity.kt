@@ -30,7 +30,6 @@ class MainActivity : BaseActivity(),BottomNavigationBar.OnTabSelectedListener {
                 .setActiveColor(R.color.colorAccent)
                 .setInActiveColor(R.color.colorGray)
                 .initialise()
-
         setDefaultFragment()//setting defultFragment
 
         navigation_bar.setTabSelectedListener(this)
@@ -43,7 +42,7 @@ class MainActivity : BaseActivity(),BottomNavigationBar.OnTabSelectedListener {
         return fragments
     }
     private fun setDefaultFragment() {
-        supportFragmentManager.beginTransaction().replace(R.id.fl_container,FemaleFragment.newInstance()).commit()
+        supportFragmentManager.beginTransaction().add(R.id.fl_container,FemaleFragment.newInstance()).commit()
     }
 
     override fun onTabSelected(position: Int) {
